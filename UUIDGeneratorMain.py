@@ -4,9 +4,6 @@ import pyperclip
 import sys
 from UUIDGenerator import *
 from PyQt5 import QtCore, QtGui, QtWidgets
-from typing import Optional
-import re
-import subprocess
 import uuid
 
 
