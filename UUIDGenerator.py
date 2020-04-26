@@ -21,6 +21,12 @@ class UserInterface(QtWidgets.QMainWindow):
         # OUTPUT
         self.uuid_output = QtWidgets.QLabel(self.centralWidget)
         self.uuid_output.setGeometry(QtCore.QRect(60, 120, 225, 35))
+        font = QtGui.QFont()
+        font.setFamily("Quicksand")
+        font.setPointSize(13)
+        font.setBold(True)
+        font.setWeight(75)
+        self.uuid_output.setFont(font)
         self.uuid_output.setFrameShape(QtWidgets.QFrame.Box)
         self.uuid_output.setFrameShadow(QtWidgets.QFrame.Plain)
 
