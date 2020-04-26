@@ -12,7 +12,17 @@ class UserInterface(QtWidgets.QMainWindow):
 
         # GENERATE UUID BUTTON
         self.generate = QtWidgets.QPushButton(self.centralWidget)
-        self.generate.setGeometry(QtCore.QRect(160, 70, 75, 35))
+        self.generate.setGeometry(QtCore.QRect(60, 70, 175, 35))
+        icon = QtGui.QIcon()
+        icon.addFile("D:\Downloads\Photos\generate.ico")
+        self.generate.setIcon(icon)
+        font = QtGui.QFont()
+        font.setFamily("Quicksand")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.generate.setText("GENERATE")
+        self.generate.setFont(font)
 
         # COPY OUTPUT BUTTON
         self.copy_output = QtWidgets.QPushButton(self.centralWidget)
