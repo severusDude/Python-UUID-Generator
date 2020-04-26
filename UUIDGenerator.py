@@ -12,15 +12,15 @@ class UserInterface(QtWidgets.QMainWindow):
 
         # GENERATE UUID BUTTON
         self.generate = QtWidgets.QPushButton(self.centralWidget)
-        self.generate.setGeometry(QtCore.QRect(160, 70, 75, 40))
+        self.generate.setGeometry(QtCore.QRect(160, 70, 75, 35))
 
         # COPY OUTPUT BUTTON
         self.copy_output = QtWidgets.QPushButton(self.centralWidget)
-        self.copy_output.setGeometry(QtCore.QRect(293, 120, 35, 35))
+        self.copy_output.setGeometry(QtCore.QRect(293, 70, 35, 35))
 
         # OUTPUT
         self.uuid_output = QtWidgets.QLabel(self.centralWidget)
-        self.uuid_output.setGeometry(QtCore.QRect(60, 120, 225, 35))
+        self.uuid_output.setGeometry(QtCore.QRect(25, 120, 350, 35))
         font = QtGui.QFont()
         font.setFamily("Quicksand")
         font.setPointSize(13)
