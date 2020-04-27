@@ -14,7 +14,6 @@ class ControlMainWindow(QtWidgets.QMainWindow):
         self.main_ui.setupUi(self)
         self.opt_index = int()
         self.output = str()
-        self.output_str = str()
         self.output_length = int()
 
         # connect button to a function
