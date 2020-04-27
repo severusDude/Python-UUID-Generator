@@ -8,4 +8,5 @@ A simple portable Python UUID Generator
 ### Library Used
 1. PyQt5 Version 5.13.0
 2. pyperclip version 1.8.0
-3. uuid 
+3. uuid version 1.30
+4. qdarkstyle version 2.8.1
