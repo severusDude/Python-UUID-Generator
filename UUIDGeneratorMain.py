@@ -21,10 +21,12 @@ class ControlMainWindow(QtWidgets.QMainWindow):
         self.main_ui.generate.clicked.connect(self.generate_click)
 
         # initialize copy button
+        self.main_ui.copy_output.setDisabled(True)
         self.main_ui.copy_output.clicked.connect(self.copy_button)
 
     # defining action when generate button is clicked
     def generate_click(self):
+        self.main_ui.copy_output.setDisabled(False)
         self.output = self.generate_uuid_1()
         self.output = self.output.replace('urn:uuid:', '')
         self.output_length = len(self.output)
