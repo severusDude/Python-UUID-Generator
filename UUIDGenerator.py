@@ -14,7 +14,7 @@ class UserInterface(QtWidgets.QMainWindow):
         self.generate = QtWidgets.QPushButton(self.centralWidget)
         self.generate.setGeometry(QtCore.QRect(60, 70, 175, 35))
         icon = QtGui.QIcon()
-        icon.addFile("icons\generate.ico")
+        icon.addFile("icons\\generate.ico")
         font = QtGui.QFont()
         font.setFamily("Quicksand")
         font.setPointSize(14)
@@ -28,7 +28,7 @@ class UserInterface(QtWidgets.QMainWindow):
         self.copy_output = QtWidgets.QPushButton(self.centralWidget)
         self.copy_output.setGeometry(QtCore.QRect(275, 70, 35, 35))
         icon = QtGui.QIcon()
-        icon.addFile("icons\copy.ico")
+        icon.addFile("icons\\copy.ico")
         self.copy_output.setIcon(icon)
 
         # OUTPUT
