@@ -20,13 +20,12 @@ class ControlMainWindow(QtWidgets.QMainWindow):
         # connect button to a function
         self.main_ui.generate.clicked.connect(self.generate_click)
 
+        # initialize copy button
         self.main_ui.copy_output.clicked.connect(self.copy_button)
 
     # defining action when generate button is clicked
     def generate_click(self):
         self.output = self.generate_uuid_1()
-        # self.output_str += self.output
-        # self.output_str = self.output_str.replace('urn:uuid:', '')
         self.output = self.output.replace('urn:uuid:', '')
         self.output_length = len(self.output)
         if self.output_length > 0:
@@ -34,7 +33,6 @@ class ControlMainWindow(QtWidgets.QMainWindow):
             self.main_ui.uuid_output.setText(self.output)
         else:
             self.main_ui.uuid_output.setText(self.output)
-        print(self.output)
 
     # defining action when copy button is clicked
     def copy_button(self):
