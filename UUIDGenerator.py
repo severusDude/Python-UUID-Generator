@@ -26,7 +26,7 @@ class UserInterface(QtWidgets.QMainWindow):
 
         # COPY OUTPUT BUTTON
         self.copy_output = QtWidgets.QPushButton(self.centralWidget)
-        self.copy_output.setGeometry(QtCore.QRect(293, 70, 35, 35))
+        self.copy_output.setGeometry(QtCore.QRect(275, 70, 35, 35))
         icon = QtGui.QIcon()
         icon.addFile("icons\copy.ico")
         self.copy_output.setIcon(icon)
