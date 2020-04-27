@@ -33,7 +33,7 @@ class UserInterface(QtWidgets.QMainWindow):
 
         # OUTPUT
         self.uuid_output = QtWidgets.QLabel(self.centralWidget)
-        self.uuid_output.setGeometry(QtCore.QRect(25, 120, 350, 35))
+        self.uuid_output.setGeometry(QtCore.QRect(15, 120, 360, 35))
         font = QtGui.QFont()
         font.setFamily("Quicksand")
         font.setPointSize(13)
@@ -42,6 +42,13 @@ class UserInterface(QtWidgets.QMainWindow):
         self.uuid_output.setFont(font)
         self.uuid_output.setFrameShape(QtWidgets.QFrame.Box)
         self.uuid_output.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.uuid_output.setStyleSheet("""
+        QWidget {
+            border: 2px solid black;
+            border-radius: 4px;
+            background-color: #2f3542;
+        }
+        """)
 
         # CENTRAL WIDGET
         MainWindow.setCentralWidget(self.centralWidget)
