@@ -2,6 +2,7 @@
 
 import pyperclip
 import sys
+import qdarkstyle
 from UUIDGenerator import *
 from PyQt5 import QtCore, QtGui, QtWidgets
 import uuid
@@ -60,6 +61,7 @@ class ControlMainWindow(QtWidgets.QMainWindow):
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
+    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     program = ControlMainWindow()
     program.show()
     sys.exit(app.exec_())
