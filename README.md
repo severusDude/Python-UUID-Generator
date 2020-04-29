@@ -10,7 +10,7 @@ A simple portable Python UUID Generator
 * [severusDude](https://github.com/severusDude)
 
 ## License
-This project is licensed under the GNU General Public License v3.0 License - see the LICENSE.md file for details
+This project is licensed under the GNU General Public License v3.0 License - see the [LICENSE.md](https://github.com/severusDude/Python-Geometry-Calculator/blob/master/LICENSE) file for details
 
 ### Built with
 * [PyQt5 Version 5.13.0](https://pypi.org/project/PyQt5/)
