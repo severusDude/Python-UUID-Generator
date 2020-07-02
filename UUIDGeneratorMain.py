@@ -60,8 +60,23 @@ class ControlMainWindow(QtWidgets.QMainWindow):
 
 
 if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
-    program = ControlMainWindow()
-    program.show()
-    sys.exit(app.exec_())
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-run":
+            from uuid import uuid4
+            from pyperclip import copy
+            temp_uuid = uuid4().urn
+            temp_uuid = temp_uuid.replace('urn:uuid:', '')
+            copy(temp_uuid)
+        else:
+            print("Unknown paramater")
+            app = QtWidgets.QApplication(sys.argv)
+            app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+            program = ControlMainWindow()
+            program.show()
+            sys.exit(app.exec_())
+    else:
+        app = QtWidgets.QApplication(sys.argv)
+        app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
+        program = ControlMainWindow()
+        program.show()
+        sys.exit(app.exec_())
