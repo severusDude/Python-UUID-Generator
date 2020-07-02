@@ -1,4 +1,15 @@
-UUID-Generator.code-workspace
-.vscode
-__pycache__
-UUIDGeneratorMain.exe
+# Ignore VSCode files
+*.code-workspace
+.vscode/
+
+# Ignore pycache
+__pycache__/
+
+# Ignore virtual environtment
+.venv/
+
+# Ignore app build
+build/
+dist/
+*.spec
+*.exe
